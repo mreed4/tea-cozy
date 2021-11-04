@@ -8,8 +8,12 @@ body {
     color: seashell;
     font-family: Helvetica, sans-serif;
     font-size: 22px;
-    opacity: 0.9;
     text-align: center;
+    user-select: none;
+}
+
+a {
+    color: inherit;
 }
 
 header {
@@ -18,17 +22,125 @@ header {
     width: 100%;
     border-bottom: 1px solid seashell;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: inherit;
+    z-index: 2;
 }
 
 header img {
     height: 50px;
+    display: block;
 }
 
 header ul {
     list-style-type: none;
-    display: block;
+    display: flex;
+    gap: 0 10px;
+    margin-right: 20px;
 }
 
 header ul li {
-    display: inline-block;
+    display: block;
+}
+
+main {
+    padding-top: 70px;
+}
+
+section {
+    margin: 70px auto 0;
+}
+
+section:first-child,
+section:last-child {
+    margin-top: 0;
+}
+
+h2,
+h4,
+h5 {
+    margin-bottom: 10px;
+}
+
+#mission-wrapper {
+    background-image: url("../images/img-mission-background_jpg_75.jpg");
+    background-size: cover;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+#mission-wrapper > div {
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+}
+
+#tea-of-month {
+    width: 1000px;
+}
+
+#tea-of-month > div {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#tea-of-month > div figure {
+    width: 300px;
+    display: block;
+}
+
+#tea-of-month > div figure img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#locations-wrapper {
+    background-image: url("../images/img-locations-background_jpg_75.jpg");
+    background-size: cover;
+    background-position: top;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#locations-wrapper > div {
+    width: 100%;
+}
+
+#locations-wrapper > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#locations-wrapper > div > div div {
+    width: 300px;
+    background-color: black;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+footer {
+    text-align: left;
+    padding: 0 0 20px 20px;
 }
